@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: #477bc0;
+  --white: #f7f8fa;
+  --grey: #424246;
+  --black: #171321;
+  --hotmag: #e310cb;
+  --aqua: #86fbfb;
+  --font-size: 1.3rem;
+  --sans: : "Open Sans", sans-serif;
+  --play: "Playfair Display", serif;
+}
+
+body {
+  background-color: var(--black);
+  font-family:var(--sans);
+  font-family:var(--play);
+  font-size: var(--font-size);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  margin-left: 2.5rem;
+}
+
+.nav-links {
+  column-gap: 1.5rem;
+  display: flex;
+  list-style: none;
+  margin-right: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+a:active {
+  color: darkblue;
+}
+
+.contact {
+  color: var(--white);
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 5rem;
+  text-align: center;
+}
+
+.contact-title {
+  color: var(--aqua);
+  margin: 0;
+  font-size: 4rem;
+}
+
+.email {
+  color: var(--hotmag);
+}
