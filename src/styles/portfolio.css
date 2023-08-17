@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: #477bc0;
+  --white: #f7f8fa;
+  --grey: #424246;
+  --black: #171321;
+  --hotmag: #e310cb;
+  --aqua: #86fbfb;
+  --font-size: 1.3rem;
+  --sans: : "Open Sans", sans-serif;
+  --play: "Playfair Display", serif;
+}
+
+body {
+  background-color: var(--black);
+  font-family:var(--sans);
+  font-family:var(--play);
+  font-size: var(--font-size);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  margin-left: 2.5rem;
+}
+
+.nav-links {
+  column-gap: 1.5rem;
+  display: flex;
+  list-style: none;
+  margin-right: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+a:active {
+  color: darkblue;
+}
+
+.intro {
+  color: var(--white);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 7.5rem 5rem 5rem;
+  max-width: 50%;
+}
+
+.intro p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.my-name {
+  color: var(--aqua);
+  font-size: 5rem;
+}
+
+.my-specialty {
+  font-size: 2rem;
+}
+
+.my-career {
+  line-height: 2.5rem;
+}
+
+.my-career .anchor {
+  color: var(--hotmag);
+  font-size: xx-large;
+  text-decoration: underline;
+}
