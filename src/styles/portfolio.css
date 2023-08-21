@@ -15,15 +15,22 @@
   --black: #171321;
   --hotmag: #e310cb;
   --aqua: #86fbfb;
+  --green: #338d77;
   --font-size: 1.3rem;
   --sans: : "Open Sans", sans-serif;
   --play: "Playfair Display", serif;
+  --mono: "Oxygen Mono", monospace;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 body {
   background-color: var(--black);
+  cursor: default;
   font-family:var(--sans);
-  font-family:var(--play);
+  font-family:var(--mono);
   font-size: var(--font-size);
   padding: 0;
   margin: 0;
@@ -40,16 +47,6 @@ body {
   justify-content: space-between;
 }
 
-nav h1 [class*="fa-"] {
-  font-size: 100%;
-  color: var(--aqua);
-}
-
-nav [class*="fa-"] {
-  font-size: 150%;
-  color: var(--pink);
-}
-
 .brand {
   margin: 0 0 0 2.5rem
 }
@@ -59,6 +56,11 @@ nav [class*="fa-"] {
   display: flex;
   list-style: none;
   margin-right: 2.5rem;
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
 }
 
 a {
@@ -71,11 +73,63 @@ a:visited {
 
 a:hover {
   color: var(--blue);
-  cursor: pointer;
 }
 
 a:active {
   color: darkblue;
+}
+
+nav [class*="fa-"] {
+  font-size: 150%;
+}
+
+.fa-linkedin {
+  color: #0e49af;
+}
+
+.fa-linkedin:hover {
+  color: var(--blue);
+}
+
+.fa-linkedin:active {
+  color: darkblue;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-github:hover {
+  color: var(--blue);
+}
+
+.fa-github:active {
+  color: darkblue;
+}
+
+.resume-button {
+  background-color: var(--hotmag);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.resume-button:hover {
+  background-color: var(--aqua);
+  color: #000000;
+}
+
+.resume-button:active {
+  background-color: darkblue;
+  color: var(--white);
+}
+
+.gradient {
+  background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
+  height: 0.1rem;
+}
+
+.page {
+  font-family: var(--play);
 }
 
 .intro {
@@ -109,4 +163,45 @@ a:active {
   color: var(--hotmag);
   font-size: xx-large;
   text-decoration: underline;
+}
+
+footer {
+  background-color: var(--grey);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.footer-brand {
+  margin: 0;
+}
+
+.fa-envelope {
+  color: grey;
+}
+
+.fa-envelope:hover {
+  color: var(--blue);
+}
+
+.fa-envelope:active {
+  color: darkblue;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.footer-link {
+  font-size: 150%;
+}
+
+.copyright {
+  margin: 0;
 }
