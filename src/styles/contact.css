@@ -130,7 +130,7 @@ nav [class*="fa-"] {
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  margin: 2.5rem 5rem;
+  padding: 11rem 5rem;
   text-align: center;
 }
 
@@ -138,10 +138,21 @@ nav [class*="fa-"] {
   color: var(--aqua);
   margin: 0;
   font-size: 4rem;
+  padding-bottom: 2rem;
 }
+
+.contact p {
+  margin: 3rem 0;
+  padding: 0;
+}
+
 
 .email {
   color: var(--hotmag);
+}
+
+.email-link {
+  padding-top: 2rem;
 }
 
 footer {
