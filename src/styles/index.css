@@ -134,14 +134,23 @@ nav [class*="fa-"] {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  margin: 7.5rem 5rem 5rem;
+  padding: 10rem 5rem;
   max-width: 60%;
 }
 
 .intro p {
   margin: 0;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
 }
+
+.intro p:first-child {
+  padding-top: 0;
+}
+
+.intro p:last-child {
+  padding-bottom: 0;
+}
+
 
 .my-name {
   color: var(--aqua);
