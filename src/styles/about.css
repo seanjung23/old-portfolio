@@ -64,11 +64,8 @@ nav h1 [class*="fa-"] {
 }
 
 a {
-  text-decoration: none;
-}
-
-a:visited {
   color: var(--white);
+  text-decoration: none;
 }
 
 a:hover {
