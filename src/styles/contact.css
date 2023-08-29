@@ -130,29 +130,27 @@ nav [class*="fa-"] {
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  padding: 11rem 5rem;
+  padding: 10rem 5rem;
   text-align: center;
 }
 
 .contact-title {
   color: var(--aqua);
-  margin: 0;
+  margin: 2rem 0;
   font-size: 4rem;
-  padding-bottom: 2rem;
 }
 
-.contact p {
-  margin: 3rem 0;
-  padding: 0;
-}
-
-
-.email {
-  color: var(--hotmag);
+.contact-statement {
+  margin: 5rem 0;
 }
 
 .email-link {
-  padding-top: 2rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.email {
+  color: var(--hotmag);
 }
 
 footer {
